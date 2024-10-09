@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 首頁 */
+.head-bg {
+    height: 90vh;
+    background: url(./images/headbg.png) no-repeat center /cover fixed;
+}
+
+.anis {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.ani {
+    width: 270px;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 200px;
+    transition: all 0.2s linear;
+}
+
+.ani:hover {
+    height: 90vh;
+    border-radius: 0px;
+    transition: all 0.2s linear ease-in-out;
+}
+
+/* 跑馬燈 */
+.icon li {
+    background: url(./images/白LOGO.png) no-repeat center center/cover;
+    min-width: calc(66%/6);
+    margin: 12px 50px;
+    padding-top: 80px;
+    list-style: none;
+}
+
+.icon {
+    display: flex;
+    gap: 50px;
+    min-width: 100%;
+}
+
+.icons {
+    max-width: 100%;
+
+    animation: light1 13s linear infinite;
+    /* transform: translateX(10%); */
+}
+
+@keyframes light1 {
+    100% {
+        transform: translateX(-109%);
+    }
+}
+
+/* 關於我們 */
+#me {
+    width: 100%;
+    height: 110vh;
+    background: #1e9fbc;
+    position: relative;
+    overflow: hidden;
+}
+
+.mebg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    margin-top: 200px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.mebg::before {
+    content: "";
+    position: absolute;
+    border: 20px solid #ffb700;
+    border-radius: 50%;
+    border-top-color: transparent;
+    inset: -70px;
+    ;
+    animation: circle 2s linear infinite reverse;
+}
+
+@keyframes circle {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 軌道定位 */
+.balll {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ballr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.meani{
+    
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+    top: -490px;
+    animation: meani-1 10s linear infinite;
+}
+@keyframes meani-1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.meani2{
+    
+    z-index: 1;
+    position: absolute;
+    right: -500px;
+    bottom: -420px;
+    animation: meani-1 8s linear infinite;
+}
+@keyframes meani-1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* 最新消息 */
+#new {
+    width: 100%;
+    background: url(./images/hdbg.png) no-repeat center/cover fixed;
+    position: relative;
+}
+
+.hd-one img {
+    width: 370px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hd-objs {
+    display: flex;
+}
+
+.hd-obj {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0 0 300px;
+    z-index: 9;
+    position: relative;
+    left: 35px;
+}
+
+.hd-obj button {
+    font-size: 25px;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2px solid #000;
+    color: #ffffff;
+    text-shadow: 1px 2px #000;
+    background: #1e9fbc;
+    transition: all 0.2s linear;
+}
+
+.hd-obj button:hover {
+    background: #ffc634;
+    text-shadow: none;
+    color: #000;
+    transition: all 0.2s linear;
+}
+
+/* 跑馬燈2 */
+.hourse2 {
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    position: relative;
+
+}
+
+.icon2 li {
+    background: url(./images/黑LOGO.png) no-repeat center center/cover;
+    min-width: calc(120%/6);
+    margin: 15px 50px;
+    padding-top: 80px;
+    list-style: none;
+}
+
+.icon2 {
+    display: flex;
+    gap: 50px;
+    min-width: 100%;
+}
+
+.icons2 {
+    max-width: 100%;
+    animation: light2 13s linear infinite;
+    /* transform: translateX(10%); */
+}
+
+@keyframes light2 {
+    100% {
+        transform: translateX(-108%);
+    }
+}
+
+.hoursebg {
+    width: 650px;
+    position: absolute;
+    bottom: -108px;
+    left: 85px;
+    z-index: 8;
+}
+
+/* 活動資訊 */
+#party {
+    width: 100%;
+    height: 235vh;
+    background: url(./images/partybg.png)no-repeat center/cover;
+    position: relative;
+}
+
+.party-title {
+    position: absolute;
+    bottom: 1520px;
+    width: 950px;
+}
+
+.party-bg {
+    width: 750px;
+    height: 57vh;
+    background: #ffffff;
+    border-radius: 20px;
+
+}
+
+.party-imgs img {
+    width: 400px;
+    height: 271px;
+    border-radius: 20px;
+
+
+}
+
+/* 購物車 */
+#shop {
+    width: 100%;
+    height: 80vh;
+    background: url(./images/shopbg.png) no-repeat center /cover fixed;
+    position: relative;
+}
+
+.shop-gs {
+    position: absolute;
+    bottom: 90px;
+    left: 210px;
+}
+
+.shop-btn {
+    font-size: 20px;
+    background: #ffc634;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.shopend {
+    z-index: 4;
+}
+
+.shops img {
+    width: 210px;
+    border-radius: 100px 100px 0 0;
+    margin-left: 5px;
+}
+
+.shop-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.shop-button {
+    padding-left: 20px;
+}
+
+.shop-bts {
+    padding: 0px 10px;
+    border-radius: 100px;
+    font-size: 20px;
+    border: none;
+    background: #ffffff;
+
+}
+
+.shop-name {
+    margin: 20px 0;
+}
+
+.shop-obj {
+    display: flex;
+    gap: 80px;
+    padding-top: 200px;
+    padding-left: 130px;
+}
+
+.shop-objs {
+    background: #ffc634;
+    padding: 50px;
+    border-radius: 150px 150px 0 0;
+}
+
+.shop-input {
+    text-align: center;
+    width: 90px;
+    margin-top: 20px;
+    margin: 10px 10px 0 10px;
+    border: 1px solid #8d6707;
+    border-radius: 5px;
+}
+
+/* 頁尾 */
+.endbox1 {
+    position: relative;
+}
+
+.endball {
+    position: absolute;
+    left: 350px;
+    top: 220px;
+}
+
+
+.endani {
+    position: absolute;
+    left: 290px;
+    top: 160px;
+    animation: endani 13s linear infinite
+}
+
+
+@keyframes endani {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.endtxts {
+    width: 700px;
+    height: 550px;
+    padding: 90px 0px 70px 85px;
+    margin: 80px 80px 0px 80px;
+    background: #ffffff9e;
+    border-radius: 20px;
+}
+
+.end-btn {
+    padding: 6px;
+    border-radius: 10px;
+    background: #ffc634;
+    position: absolute;
+    top: 550px;
+    left: 1670px;
+}
+
+.end-icon {
+    display: flex;
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    left: 1590px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.end-icon img {
+    width: 60px;
+}

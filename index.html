@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>響應式測試</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.35/vue.global.min.js'
+        integrity='sha512-vzFWLyTMc9jMrXLzc/qQcbr/lJPmQBlYkLrdxmykQ9Uidz5K0Z9orAVJgA2iS0z0Ow3kpMNn+a+JZRoKK1v10g=='
+        crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- 工具列 -->
+
+    <!-- 首頁 -->
+    <div class="head-bg container-fulid ">
+        <div id="head">
+            <div class="row">
+                <div class="col-lg-6  col-sm-12" style="padding-top:300px; padding-left: 220px;">
+                    <h1 class="text-light fw-bold mb-4"><span style="font-size: 100px; color: #ffb700;">(詐)</span>
+                        <span style="font-size: 90px;">看之下</span>
+                    </h1>
+                    <p class="text-light fs-5 lh-lg fw-bold ">隨著現代科技的進步造就社會繁榮，⺠眾⽣活品質也開始提升，<br>
+                        尤其在網路技術⽇新 ⽉異的推波助瀾下，更是以無時差、無國界的形式傳播資訊。
+                        <br>雖然網路讓⺠眾⽣活更加便利，卻也被有⼼⼈⼠將其利⽤成為詐騙工具。
+                    </p>
+                </div>
+
+                <div class="col-6 anis">
+                    <img class="ani" src="./images/test_img01.jpg" alt="">
+                    <img class="ani" src="./images/test_img44.jpg" alt="">
+                    <img class="ani" src="./images/test_img43.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- 跑馬燈 -->
+    <section class="bg-dark" style="width: 100%; height: 10vh;">
+        <div class="icons">
+            <ul class="icon">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <!-- 關於我們 -->
+    <div class="container-Fulid">
+        <div id="me">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 me">
+                    <img class="balll" style="width: 450px;" src="./images/meballleft.png" alt="">
+                    <img class="meani" src="./images/meani.png" alt="" width="960px">
+                </div>
+                <div class="col-lg-6 col-sm-12 me ">
+                    <div class="mebg rounded-circle bg-light" style="width: 700px; height: 700px;">
+                        <h1 class="fw-bold mb-5 " style="font-size: 70px;">什麼是<span style="color:#ffb700 ;">詐騙</span>?
+                        </h1>
+                        <p class=" fs-5 lh-lg ps-2 fw-bold">
+                            隨著世代的影響，網路使人類生活越來越便利，<br>
+                            同時也遭到有心人士的利用，使網路淪為詐騙 <br>工具，
+                            詐騙客透過各種方式來欺騙民眾，導致 <br>民眾人心慌慌，
+                            網路生態越來越糟糕，各種詐 <br>騙手段都有，
+                            政府也積極地在打擊那群詐騙客， <br>
+                            維護民眾使用網路的權益以及安全
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 me">
+                    <img class="ballr" style="width: 450px;" src="./images/meballright.png" alt="">
+                    <img class="meani2" src="./images/meani2.png" alt="" width="960px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 最新消息 -->
+    <section id="new">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="col-6 " style="padding-top: 10%; padding-left: 250px;">
+                    <h1 class="fw-bold text-dark mb-4 " style="font-size: 70px;">詐騙新手段
+                    </h1>
+                    <p class="fs-4 text-dark  lh-lg fw-bold">
+                        詐騙隨著時代以及網路的更迭也不斷的衍生了各種詐騙方式， <br>
+                        為了得到被害人的信任，詐騙客利用各種身分以及手段欺騙他人財產，<br>
+                        根據統計最常見也最容易受騙的手段分別如下
+                    </p>
+                </div>
+                <div class="col-6 hd-objs">
+                    <div class="hd-obj " style="gap: 40px;">
+                        <button id="bt1" class="active" data-src="./images/tst_img55.jpg">網路詐欺</button>
+                        <button id="bt2" data-src="./images/tst_img30.jpg">假冒名義</button>
+                        <button id="bt3" data-src="./images/tst_img57.jpg">詐騙款項</button>
+                        <button id="bt4" data-src="./images/tst_img02.jpg">投資詐欺</button>
+                    </div>
+                    <div class="hd-one">
+                        <img src="./images/tst_img55.jpg" alt="" class="hd-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class=" hourse2" style="width: 100%; height: 11vh; background: #000000; overflow: hidden;">
+            <div class="icons2">
+                <ul class="icon2">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+        </section>
+        <img class="hoursebg" src="./images/hoursebg.png" alt="">
+    </section>
+    <!-- 跑馬燈2 -->
+    <!-- 活動資訊 -->
+    <section id="party">
+        <img class="party-title" src="./images/partytitle.png" alt="">
+        <div class="container " style="padding-top: 300px;">
+            <div class="row ">
+                <div class="col-8 mb-5 pe-5 ps-5 party-bg">
+                    <h1 class="fw-bold" style="padding-top: 50px; margin-bottom: 25px;">假冒公務員或警察機構詐財⼿法及預防策略</h1>
+                    <p class="fs-5 mb-4 lh-lg fw-bold">法院或警察機關辦案，不會收取當事⼈現⾦、亦不會要求匯款；法院或警察機關不會監管
+                        當事⼈帳⼾；法院不會⽤傳真⽅式，將傳喚書送給當事⼈， <span style="color: #ffb700; font-weight: bold;">⼀定會以掛號信函送達</span>；公家
+                        機關絕對不會以電話、電話錄音或以簡訊通知⽤⼾轉帳，或要打電話與某單位聯繫。
+                    </p>
+                    <hr>
+                    <p class="fs-5 mb-5 lh-lg fw-bold"><span class="fs-4 fw-bold "
+                            style="color: #ffb700;">檢警調等單位</span>處理司法案件，如有必要將以通知書通知涉案⼈到案說明或⾄指定機關繳交款項。⺠眾若有疑慮應及時撥打「 <span
+                            style="color: #ffb700;">110</span>」通報警⽅派員處理，或撥打「 <span
+                            style="color: #ffb700;">165</span>」反詐騙諮詢電話諮詢。
+                    </p>
+                </div>
+                <div class="col-4 party-imgs" style="padding-right: 0; padding-left: 25px;">
+                    <img class="mb-4" src="./images/test_img16.jpg" alt="">
+                    <img src="./images/test_img25.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 party-imgs ">
+                    <img class="mb-4" src="./images/test_img40.jpg" alt="">
+                    <img src="./images/test_img36.jpg" alt="">
+                </div>
+                <div class="col-8 mb-5 pe-5 ps-5 party-bg">
+                    <h1 class="fw-bold" style="padding-top: 35px; margin-bottom: 20px;"> 假冒拍賣賣家詐騙預防策略</h1>
+                    <p class="fs-5 mb-4 lh-lg fw-bold">
+                        <span
+                            style="color: #ffb700;">千萬不要聽信任何⼈</span>（包含賣家或銀⾏⼈員）以「解除ATM設定」、「誤刷條碼」、「誤設訂單」、「重複扣款」、「⾄ATM操作資料整理」、「開啟網路購物的個資啟⽤權限」、
+                        「超商購My Card點數卡、比特幣」為游去ATM修正設定或是到超商購買遊戲點數，這絕對是詐騙！ <span
+                            style="color: #ffb700; font-size: 24px;">若有疑慮請撥165專線查證，勿聽信來電電話。</span>
+                    </p>
+                    <hr>
+                    <p class="fs-5 mb-4 lh-lg fw-bold"> <span
+                            style="color: #ffb700;">1.不要點選來路不明郵件</span>，並請安裝防毒軟體，避免歹徒盜錄⽤⼾交易資料。要慎選買家，
+                        選擇較安全的付費⽅式（如當⾯交易或貨到付款）。
+                    </p>
+                    <p class="fs-5 mb-4 lh-lg fw-bold">
+                        2.習慣於網路購物交易的⺠眾，0200、0800、0900、0204起頭之電話都是虛擬碼，只能單⽅聽電話，無法撥出，亦不會顯⽰號碼於被害⼈⼿機上。</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-7 party-bg" style="display: flex;">
+                    <img class="ms-4" src="./images/test_img07.jpg" alt="" height="500vh"
+                        style="border-radius: 20px; margin-top: 35px;">
+                    <div style="display: flex; flex-direction: column; margin-left: 40px;">
+                        <h2 class="fw-bold  mb-4 " style="margin-top: 100px;"> 假冒銀⾏詐騙預防策略</h2>
+                        <p class="fs-5 fw-bold lh-lg" style="width: 320px;">ATM只能提款、存款及轉帳，沒有退款、解除分期設定或⾝分驗證等的功能，請存⼾與保
+                            ⼾務必留意，並切勿聽信歹徒電話指⽰到ATM操作任何功能，或將個⼈資料、⾦融卡密碼
+                            及存摺密碼告訴歹徒，以免遭受詐騙</p>
+                    </div>
+
+                </div>
+                <div class="col-5 ms-5 pt-5"
+                    style="width: 500px; height: 57vh; background: #fff; border-radius: 20px; padding-left: 75px;">
+                    <img class="pb-4 " src="./images/圓餅圖.png" alt="" width="250px" style="margin-left: 35px;">
+                    <p class="fw-bold lh-lg " style="width: 350px;">根據警政署刑事檢查局提供最新資料顯⽰，去年國內「投資詐騙」發⽣案件⾼達<span
+                            style="color: #ff0000;">4902</span>
+                        件，較前年（2020）的 2852 件、年增率為 71.95％；其中，「投資詐騙」前 3⼤類型依序
+                        為「網路賭博」、「虛擬資產詐騙」</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 購物車 -->
+    <section id="shop">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="col-4  " style="padding-left: 15%; padding-top: 4%;">
+                    <h1 class="fw-bold mb-4" style="font-size: 70px;"> <span style="color: #ffb700;">防詐騙</span>專區</h1>
+                    <p class="fs-5 fw-bold lh-lg ">
+                        詐騙的手法越來越多，我們提供相關的 <br><span class="fs-3">線上課程</span>
+                        邀請到反詐騙相關知識的<br>業師 教學，讓更多民眾參與了
+                        解詐騙<br>手段時 如何形成，生活中哪些行為背<br>後藏著被 詐騙的風險
+                    </p>
+
+                    <div style="display:flex; margin-left: 70px; margin-top: 150px;">
+                        <div class="shopend fs-4 me-4 pt-3 fw-bold text-light"></div>
+                        <button class="shop-btn  p-2 fw-bold" onclick="shop_submit()">送出</button>
+                    </div>
+                    <img class="shop-gs" src="./images/gspng.png" alt="" width="450px">
+                </div>
+                <div class="col-7">
+                    <div class="shop-obj"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 留言區 -->
+    <section id="end">
+        <div class="container-fulid"
+            style="width: 100%; height: 80vh; background: url(./images/endbg.png)no-repeat center/cover fixed; ">
+            <div class="row endbox1">
+                <div class="col-6 ">
+                    <img class="endball" src="./images/endball.png" alt="" width="280px">
+                    <img class="endani" src="./images/endani.png" alt="" width="400px">
+                </div>
+
+                <div class="col-6 end-txt text-dark">
+                    <div class="endtxts">
+                        <h1 class=" fw-bold mb-5 " style="font-size: 48px; ">訂閱電子報了解更多內容</h1>
+                        <p class="fs-5 fw-bold">電子郵件:</p>
+                        <input type="text fw-bold"
+                            style="width: 530px; margin-bottom:40px; text-align: center; border-radius: 10px; height: 40px; border: 2px solid #ffb700;">
+                        <p class="fs-5 fw-bold">留言區:</p>
+                        <textarea name="" id=""
+                            style="width: 530px; text-align: center;  border-radius: 10px; height: 40px;  border: 2px solid #ffb700;"></textarea>
+                        <button class="end-btn fs-5 fw-bold">送出</button>
+
+                    </div>
+
+                    <div class="end-icon " style="margin-bottom: 250px;">
+                        <img src="./images/facebook.png" alt="" width="20px">
+                        <img src="./images/ig.png" alt="" width="20px">
+                        <img src="./images/line.png" alt="" width="20px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+    <section id="footer" style="background:#1e9fbc ;">
+        <div class="content">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-light"
+                        style="font-size: 16px; display: flex; justify-content: center; padding-top: 20px; margin: 0;">
+                        詐看之下官方網站｜任何疑慮請撥打165、110尋求協助｜0800-000-000
+                    </p>
+                    <p class="text-light" style="font-size: 16px; display: flex; justify-content: center;">
+
+                        2024◎本網站使用CSS、js製作，並附有RWD響應式功能，方便不同裝置使用者閱覽
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="myCursor"></div>
+    <div id="circle"></div>
+    <script src="./index.js"></script>
+</body>
+
+</div>
+
+</html>
